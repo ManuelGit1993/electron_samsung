@@ -1,0 +1,32 @@
+{
+  "name": "samsung_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "electron-blog-example",
+    "dmg": {
+      "title": "${productName} ${version}"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.2.1",
+    "electron-builder": "^23.6.0"
+  }
+}
